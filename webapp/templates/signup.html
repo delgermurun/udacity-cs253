@@ -1,0 +1,12 @@
+<form method="POST">
+    <p>Signup</p>
+    <label>Username <input type="text" name="username" value="{{ value['username'] }}"></label>
+    <span style="color:red;">{{ error['username'] }}</span><br>
+    <label>Password <input type="password" name="password" value="{{ value['password'] }}"></label>
+    <span style="color:red;">{{ error['password'] }}</span><br>
+    <label>Verify Password <input type="password" name="verify" value="{{ value['verify'] }}"></label>
+    <span style="color:red;">{{ error['verify'] }}</span><br>
+    <label>Email (Optional) <input type="text" name="email" value="{{ value['email'] }}"></label>
+    <span style="color:red;">{{ error['email'] }}</span><br>
+    <p><input type="submit" value="Continue &rarr;"></p>
+</form>
